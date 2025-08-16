@@ -26,8 +26,8 @@ bunx convex run tests:init
 bunx playwright install
 ```
 
-## Run tests
+## Run tests (unit and e2e)
 
 ```bash
-bun run test:e2e
+bun run test
 ```
