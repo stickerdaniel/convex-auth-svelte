@@ -29,9 +29,9 @@ This guide assumes you already have a [working Convex app](https://docs.convex.d
 ### 1. Install Dependencies
 
 ```bash
-npm install @convex-dev/auth @auth/core @mmailaender/convex-auth-svelte
+bun install @convex-dev/auth @auth/core @mmailaender/convex-auth-svelte
 # or
-pnpm add @convex-dev/auth @auth/core @mmailaender/convex-auth-svelte
+pbun add @convex-dev/auth @auth/core @mmailaender/convex-auth-svelte
 # or
 yarn add @convex-dev/auth @auth/core @mmailaender/convex-auth-svelte
 ```
@@ -39,7 +39,7 @@ yarn add @convex-dev/auth @auth/core @mmailaender/convex-auth-svelte
 ### 2. Run the initialization command
 
 ```bash
-npx @convex-dev/auth
+bunx @convex-dev/auth
 ```
 
 This sets up your project for authenticating via the library.

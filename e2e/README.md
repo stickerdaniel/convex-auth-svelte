@@ -2,7 +2,7 @@
 
 ## The mostly automated way
 
-After an `npm install`, run `npm test`.
+After an `bun install`, run `bun test`.
 This tests against the most recently published official binary.
 
 ## The more manual way
@@ -17,7 +17,7 @@ you can skip to running the test command at the end.
 1. From the `test-sveltekit` directory, run:
 
 ```
-CONVEX_LOCAL_BACKEND_PATH=/path/to/your/convex-backend npm run test
+CONVEX_LOCAL_BACKEND_PATH=/path/to/your/convex-backend bun run test
 ```
 
 ## The most manual way
@@ -28,10 +28,10 @@ You'll need manage your own Convex deployment to follow these instructions.
 
 1. Create a test user
 
-   `npx convex run tests:init`
+   `bunx convex run tests:init`
 
 1. Set up the secret on a Convex backend matching the one in `.env.test`:
 
-   `npx convex env set AUTH_E2E_TEST_SECRET <something>`
+   `bunx convex env set AUTH_E2E_TEST_SECRET <something>`
 
 1. Run `playwright test`
