@@ -1,7 +1,7 @@
 <script>
 	import { useAuth } from '$lib/sveltekit';
 	import { goto } from '$app/navigation';
-    
+
 	import { env } from '$env/dynamic/public';
 
 	const { signIn } = useAuth();
@@ -12,6 +12,9 @@
 		<h2 class="mb-4 text-2xl font-semibold tracking-tight">Sign in or create an account</h2>
 		<button class="btn preset-filled" onclick={() => signIn('github', { redirectTo: '/product' })}
 			>Sign In with GitHub</button
+		>
+		<button class="btn preset-filled" onclick={() => signIn('google', { redirectTo: '/product' })}
+			>Sign In with Google</button
 		>
 		{#if env.PUBLIC_E2E_TEST}
 			<form

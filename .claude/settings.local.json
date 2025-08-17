@@ -1,14 +1,16 @@
 {
-  "permissions": {
-    "allow": [
-      "WebFetch(domain:labs.convex.dev)",
-      "Bash(node:*)",
-      "WebFetch(domain:github.com)"
-    ],
-    "deny": [],
-    "ask": [
-      "Bash(rm:*)"
-    ],
-    "defaultMode": "plan"
-  }
+	"permissions": {
+		"allow": [
+			"WebFetch(domain:labs.convex.dev)",
+			"Bash(node:*)",
+			"WebFetch(domain:github.com)",
+			"WebSearch",
+			"WebSearch",
+			"WebFetch(domain:vercel.com)",
+			"WebFetch(domain:developers.cloudflare.com)"
+		],
+		"deny": [],
+		"ask": ["Bash(rm:*)"],
+		"defaultMode": "plan"
+	}
 }

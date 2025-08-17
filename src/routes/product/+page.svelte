@@ -7,12 +7,12 @@
 
 	let { data } = $props();
 
-	const viewer = useQuery(api.users.viewer, {}, () => ({initialData: data.viewer}));
+	const viewer = useQuery(api.users.viewer, {}, () => ({ initialData: data.viewer }));
 </script>
 
 {#if viewer.data}
 	<main class="flex max-h-screen grow flex-col overflow-hidden">
-		<div class="flex items-start justify-between border-b border-surface-200-800 p-4">
+		<div class="border-surface-200-800 flex items-start justify-between border-b p-4">
 			<ChatIntro />
 			<UserMenu viewer={viewer.data} />
 		</div>
