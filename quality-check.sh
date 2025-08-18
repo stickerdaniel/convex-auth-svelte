@@ -148,7 +148,7 @@ echo ""
 if [ "$RUN_TESTS" = true ]; then
     echo "6. Tests"
     echo "======================================================"
-    bun run test_run
+    bun run test
     echo ""
     echo ""
 fi
