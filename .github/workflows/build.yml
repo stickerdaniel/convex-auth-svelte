@@ -2,8 +2,8 @@ name: Build
 
 on: [push, pull_request]
 
-# env:
-#   # Add any required environment variables here
+env:
+  PUBLIC_CONVEX_URL: ${{ secrets.PUBLIC_CONVEX_URL }}
 
 jobs:
   build_and_test:
