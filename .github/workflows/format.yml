@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: bun install
 
+      - name: Install Playwright Chromium
+        run: bunx playwright install chromium --with-deps
+
       - name: Install misspell
         run: go install github.com/client9/misspell/cmd/misspell@latest
 
