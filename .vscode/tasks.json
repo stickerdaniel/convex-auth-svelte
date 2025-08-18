@@ -1,0 +1,60 @@
+// .vscode/tasks.json
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "bun run dev -- --open",
+			"detail": "Run the development server and open the page in the browser",
+			"type": "shell",
+			"command": "bun",
+			"args": ["run", "dev", "--", "--open"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "bun run lint-staged",
+			"detail": "Run lint-staged for pre-commit hooks",
+			"type": "shell",
+			"command": "bun",
+			"args": ["run", "lint-staged"],
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"presentation": {
+				"clear": true
+			},
+			"problemMatcher": ["$eslint-compact", "$tsc"]
+		},
+		{
+			"label": "bun run i18n:pull",
+			"detail": "Pull translations from Tolgee and format JSON files",
+			"type": "shell",
+			"command": "bun",
+			"args": ["run", "i18n:pull"],
+			"group": "none",
+			"presentation": {
+				"clear": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "bun run i18n:push",
+			"detail": "Push translations to Tolgee and format JSON files",
+			"type": "shell",
+			"command": "bun",
+			"args": ["run", "i18n:push"],
+			"group": "none",
+			"presentation": {
+				"clear": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
