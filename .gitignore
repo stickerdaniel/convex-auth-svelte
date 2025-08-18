@@ -28,6 +28,3 @@ vite.config.ts.timestamp-*
 /blob-report/
 /playwright/.cache/
 test-results
-
-# Convex
-src/lib/convex/_generated
